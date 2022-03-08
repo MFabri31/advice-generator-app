@@ -1,0 +1,36 @@
+:root {
+  --light-cyan: #cee3e9;
+  --neon-green: #52ffa8;
+  --grayish-blue: #313a49;
+  --dark-grayish-blue: #202632;
+  --font: "Manrope", sans-serif;
+  --font-size: 28px;
+}
+
+body {
+  background-color: var(--dark-grayish-blue);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-size: var(--font-size);
+  font-family: var(--font);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.divider {
+  background-image: url(./images/pattern-divider-mobile.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 0;
+  margin: 2rem;
+  height: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .divider {
+    background-image: url(./images/pattern-divider-desktop.svg);
+  }
+}
